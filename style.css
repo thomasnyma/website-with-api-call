@@ -1,0 +1,152 @@
+/* Tested in Chrome, Firefox, Opera and Edge(New version) */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+    --primary-color: #5c5d8d;
+    --secondary-color: #42e2b8;
+    --third-color: #2f4f4f;
+    --card-background-color: #f8f8ff;
+    --main-background-color: #ffffff;
+    --nav-link-color: 255, 255, 255;
+    /* --color: #adbdff;
+    --color: #98ff98;
+    --color: #42e2b8; */
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+/* Navigation */
+nav {
+    background-color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 2rem;
+    padding: 0;
+    float: right;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: var(--main-background-color);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    transition: ease-in-out .15s;
+}
+
+nav li a:hover {
+    background-color: rgba(var(--nav-link-color), 0.2);
+}
+
+.active {
+    background-color: rgba(var(--nav-link-color), 0.1);
+    font-weight: 600;
+}
+
+
+/* Content */
+.main-content {
+    margin: 5rem;}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    justify-content: space-between;
+    background-color: var(--card-background-color);
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.card-body {
+
+}
+
+.card-link {
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.search {
+    color: var(--primary-color);
+}
+
+.poster-content {
+    list-style: none;
+    padding: none;
+    padding-inline-start: 0;
+}
+.poster-content h2 {
+    margin: 0;
+    padding: .5rem;
+}
+
+.poster-content li:nth-child(odd) {
+    background-color: #f8f8ff;
+}
+
+/* .poster-item > div {
+    display: none;
+} */
+
+/* .poster-content li:nth-child(even) {
+    background-color: #F0F8FE;
+} */
+
+.form-wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.form-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* Footer */
+footer {
+    min-height: 5rem;
+    background-color: var(--third-color);
+    text-align: center;
+    color: var(--main-background-color);
+}
+
+footer address {
+    margin: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kontaktside</title>
+        <meta name="description" content="Website med API kald">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="poster.html">Poster</a></li>
+                <li><a href="kontaktside.html">Kontaktside</a></li>
+                <li><a href="profilside.html?userid=null">Profilside</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content card-container">
+            <form id="Formular01" class="form-wrapper">
+                <div class="form-input-wrapper">
+                    <label for="navn" id="LabelNavn">Navn:</label>
+                    <input id="InputNavn" name="navn">
+                </div>
+                <p id="FejlBesked1"></p>
+    
+                <div class="form-input-wrapper">
+                    <label for="postnummer" id="LabelPostnummer">Postnummer:</label>
+                    <input id="InputPostnummer" name="postnummer">
+                </div>
+                <p id="FejlBesked2"></p>
+    
+                <div class="form-input-wrapper">
+                    <label for="mail" id="LabelMail">Mail:</label>
+                    <input id="InputMail" name="mail">
+                </div>
+                <p id="FejlBesked3"></p>
+                
+                <button id="InputSend">Send</button>
+            </form>
+        </div>
+
+        <footer>
+            <address>
+                Lavet af <a href="mailto:thomasmaneschijn@gmail.com">Thomas Maneschijn</a>.<br>
+                Else Alfelts Vej 52E, 4. th<br>
+                2300 København S<br>
+                Danmark
+            </address>
+        </footer>
+    </body>
+</html>
